@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>holaaaa</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #0b141a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .chat-container {
+      width: 100%;
+      max-width: 450px;
+      height: 600px;
+      background-color: #0b141a;
+      border: 1px solid #222d34;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .chat-header {
+      background-color: #202c33;
+      color: #e9edef;
+      padding: 15px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      border-bottom: 1px solid #222d34;
+    }
+
+    .chat-messages {
+      flex: 1;
+      padding: 20px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background-image: radial-gradient(#202c33 1px, transparent 0);
+      background-size: 16px 16px;
+    }
+
+    .message {
+      max-width: 75%;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      position: relative;
+      word-wrap: break-word;
+    }
+
+    /* Mensajes recibidos (Izquierda) */
+    .received {
+      align-self: flex-start;
+      background-color: #202c33;
+      color: #e9edef;
+      border-top-left-radius: 0;
+    }
+
+    /* Mensajes enviados (Derecha) */
+    .sent {
+      align-self: flex-end;
+      background-color: #005c4b;
+      color: #e9edef;
+      border-top-right-radius: 0;
+    }
+
+    .user-name {
+      font-size: 0.75rem;
+      font-weight: bold;
+      color: #53bdeb;
+      margin-bottom: 2px;
+    }
+
+    .timestamp {
+      font-size: 0.65rem;
+      color: #8696a0;
+      text-align: right;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="chat-container">
+    <div class="chat-header">
+      Grupo de Trabajo Git 💬
+    </div>
+
+    <div class="chat-messages">
+
+      <!-- MENSAJE 1 -->
+      <div class="message received">
+        <div class="user-name">Compañero</div>
+        ¡Hola! ¿Cómo vas con el proyecto de Git?
+        <div class="timestamp">10:00 AM</div>
+      </div>
+
+      <!-- MENSAJE 2 -->
+      <div class="message sent">
+        <div class="user-name">Tú</div>
+        ¡Hola! Todo bien, ya estoy subiendo los cambios al repositorio.
+        <div class="timestamp">10:01 AM</div>
+      </div>
+
+      <!-- COPIEN Y PEGUEN BLOQUES COMO ESTE PARA SEGUIR LA CONVERSACIÓN -->
+
+    </div>
+  </div>
+
+</body>
+</html>
